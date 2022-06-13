@@ -1,6 +1,6 @@
-##[DevIt test task: PHP Backend Developer Laravel](https://sharing.clickup.com/t/h/22wbymp/M6SS32JBY1TDNDM)
+# [DevIt test task: PHP Backend Developer Laravel](https://sharing.clickup.com/t/h/22wbymp/M6SS32JBY1TDNDM)
 
-##How to use
+## How to use
 
 This project was developed on linux ubuntu.
 
@@ -30,9 +30,26 @@ Make migration to run datebase:
 ```
 If you get an error during migration, try to repeat command above once more. 
 
-##RSS parser
+## RSS parser
 Run command to parse xml rss:
 ```sh
 ./vendor/bin/sail artisan parse:rss
 ```
-To make worker that runs 
+To make **worker** run command below:
+```sh
+./vendor/bin/sail artisan schedule:work
+```
+## Generate api documentation
+Run command below to generate api documentation
+```sh
+./vendor/bin/sail artisan l5-swagger:generate 
+```
+Now api documentation placed by url:
+```sh
+http://localhost/api/documentation
+```
+I made real server on AWS EC2 to show how it works:
+```sh
+http://54.243.25.173/api/documentation
+```
+# Good luck :)
