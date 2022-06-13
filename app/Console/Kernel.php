@@ -17,7 +17,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 //        $schedule->command('parse:rss')->everyFiveMinutes();
-//        $schedule->command('parse:rss')->hourly();
+        $schedule->command('parse:rss')->hourly();
     }
 
     /**
