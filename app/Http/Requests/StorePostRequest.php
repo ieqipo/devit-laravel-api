@@ -26,8 +26,8 @@ class StorePostRequest extends FormRequest
     {
         return [
             'title' => 'required|unique:posts,title',
-            'link' => 'required',
-            'description' => 'required',
+            'link' => 'string',
+            'description' => 'string',
         ];
     }
 }

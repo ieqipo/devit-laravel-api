@@ -67,9 +67,10 @@ class ParseRssCommand extends Command
             }
 
             Post::create($validator->validated());
-            $this->info('Command parse:rss done successfully');
+            $this->info('Current rss item was saved successfully');
         }
 
+        $this->info('Command parse:rss done');
         return 0;
     }
 
